@@ -177,7 +177,14 @@ hr {
     font-weight: bold;
 }
 
+.table tfoot td {
+    text-align: center;
+    padding: 10px;
+}
 
+.table tfoot a {
+    text-decoration: 1px underline crimson;
+}
 
 .bi-arrow-down-circle,
 .bi-arrow-up-circle {
