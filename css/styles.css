@@ -183,6 +183,10 @@ hr {
 }
 
 .table tfoot a {
+    text-decoration: none
+}
+
+.table tfoot a:hover {
     text-decoration: 1px underline crimson;
 }
 
