@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <div class="top"  id="up">
+        <p><b>Observação: </b>Página não responsiva - (ambiente de estudo)</p>
+    </div>
+    <main>
+        <section>
+            <h1>Tabelas HTML</h1>
+            <p><b>Referência: </b><a href="https://www.w3schools.com/html/html_tables.asp" target="_blank"
+                    rel="noopener noreferrer"><span>https://www.w3schools.com/html/html_tables.asp</span></a></p>
+            <p>As tabelas HTML permitem que os desenvolvedores da Web organizem os dados em linhas e colunas.
+            </p>
+            <p>Uma tabela em HTML consiste em células de tabela dentro de linhas e colunas.</p>
+
+            <table class="table">
+                <caption class="caption">HTML Table Tags</caption>
+                <thead>
+                    <tr>
+                        <th class="indice">#</th>
+                        <th>Tag</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="indice">01</td>
+                        <td><a href="#table">table</a></td>
+                        <td>Define a tabela</td>
+                    </tr>
+                    <tr>
+                        <td class="indice">02</td>
+                        <td><a href="#th">th</a></td>
+                        <td>Define uma célula de cabeçalho em uma tabela</td>
+                    </tr>
+                    <tr>
+                        <td class="indice">03</td>
+                        <td><a href="#tr">tr</a></td>
+                        <td>Define a linha em uma tabela</td>
+                    </tr>
+                    <tr>
+                        <td class="indice">04</td>
+                        <td><a href="#td">td</a></td>
+                        <td>Define a célula da tabela</td>
+                    </tr>
+                    <tr>
+                        <td class="indice">05</td>
+                        <td><a href="#caption">caption</a></td>
+                        <td>Define uma legenda</td>
+                    </tr>
+                    <tr>
+                        <td class="indice">06</td>
+                        <td><a href="#colgroup">colgroup</a></td>
+                        <td>Especifica um grupo de uma ou mais colunas em uma tabela para formatação</td>
+                    </tr>
+                    <tr>
+                        <td class="indice">07</td>
+                        <td><a href="#col">col</a></td>
+                        <td>Especifica propriedades de coluna para cada coluna dentro de um elemento &lt;colgroup></td>
+                    </tr>
+                    <tr>
+                        <td class="indice">08</td>
+                        <td><a href="#thead">thead</a></td>
+                        <td>Agrupa o conteúdo do cabeçalho em uma tabela</td>
+                    </tr>
+                    <tr>
+                        <td class="indice">09</td>
+                        <td><a href="#tbody">tbody</a></td>
+                        <td>Agrupa o conteúdo do corpo em uma tabela</td>
+                    </tr>
+                    <tr>
+                        <td class="indice">10</td>
+                        <td><a href="#tfoot">tfoot</a></td>
+                        <td>Agrupa o conteúdo do rodapé em uma tabela</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <hr>
+        <section id="table">
+            <h2>Tag - <span>&lt;table>&lt;/table></span></h2>
+            <p>A tag <span>table</span> define a tabela, é dentro dela que definimos as linhas <span>tr</span> e as
+                colunas <span>td</span> e outras propriedades.</p>
+            <div class="exemplo">
+                <h3>Exemplo</h3>
+                <p>Veja abaixo uma tabela simples contendo duas colunas e duas linhas:</p>
+
+                </p>
+                <div class="xmp">
+                    <xmp>
+                        <table>
+                            <tr>
+                                <th>Month</th>
+                                <th>Savings</th>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td>$100</td>
+                            </tr>
+                        </table>
+                    </xmp>
+                </div>
+                <div class="resultado">
+                    <div class="result-table">
+                        <table>
+                            <tr>
+                                <th>Month</th>
+                                <th>Savings</th>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td>$100</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="result-p">
+                        <p>
+                            * Passe o mouse aqui para ver o resultado do código acima.
+                        </p>
+                    </div>
+                    <div class="result-oculto">
+                        <p>
+                            * Afaste o mouse para ocultar resultado do código acima.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="th">
+            <h2>Tag - <span>&lt;th>&lt;/th></span></h2>
+            <p>A tag <span>&lt;th></span> define uma célula de cabeçalho em uma tabela HTML.</p>
+            <p>Uma tabela HTML tem dois tipos de células: </p>
+            <ul>
+                <li>Células de cabeçalho - contém informações de cabeçalho (criadas com o elemento <span>&lt;th></span>)
+                </li>
+                <li>Células de dados - contém dados (criados com o elemento <span>&lt;td></span>)
+                </li>
+            </ul>
+            <p>O texto nos elementos<span>&lt;th></span> está em negrito e centralizado por padrão.</p>
+            O texto nos elementos span>&lt;td></span> são regulares e alinhados à esquerda por padrão.
+            <div class="exemplo">
+                <h3>Exemplo</h3>
+                <p>Uma tabela HTML simples com três linhas, duas células de cabeçalho e quatro células de dados:
+
+                </p>
+                <div class="xmp">
+                    <xmp>
+                        <table>
+                            <tr>
+                                <th>Month</th>
+                                <th>Savings</th>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td>$100</td>
+                            </tr>
+                            <tr>
+                                <td>February</td>
+                                <td>$80</td>
+                            </tr>
+                        </table>
+                    </xmp>
+                </div>
+                <div class="resultado">
+                    <div class="result-table">
+                        <table>
+                            <tr>
+                                <th>Month</th>
+                                <th>Savings</th>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td>$100</td>
+                            </tr>
+                            <tr>
+                                <td>February</td>
+                                <td>$80</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="result-p">
+                        <p>
+                            * Passe o mouse aqui para ver o resultado do código acima.
+                        </p>
+                    </div>
+                    <div class="result-oculto">
+                        <p>
+                            * Afaste o mouse para ocultar resultado do código acima.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <hr>
+        <section id="tr">
+            <h2>Tag - <span>&lt;tr>&lt;/tr></span></h2>
+            <p>A tag <span>&lt;tr></span> define uma linha em uma tabela HTML.</p>
+            <p>Um elemento<span>&lt;tr></span> contém um ou mais elementos <span>&lt;th></span> ou <span>&lt;td></span>.
+            </p>
+            <div class="exemplo">
+                <h3>Exemplo</h3>
+                <p>Uma tabela HTML simples com três linhas; uma linha de cabeçalho e duas linhas de dados:</p>
+                <div class="xmp">
+                    <xmp>
+                        <table>
+                            <tr>
+                                <th>Month</th>
+                                <th>Savings</th>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td>$100</td>
+                            </tr>
+                            <tr>
+                                <td>February</td>
+                                <td>$80</td>
+                            </tr>
+                        </table>
+                    </xmp>
+                </div>
+                <div class="resultado">
+                    <div class="result-table">
+                        <table>
+                            <tr>
+                                <th>Month</th>
+                                <th>Savings</th>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td>$100</td>
+                            </tr>
+                            <tr>
+                                <td>February</td>
+                                <td>$80</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="result-p">
+                        <p>
+                            * Passe o mouse aqui para ver o resultado do código acima.
+                        </p>
+                    </div>
+                    <div class="result-oculto">
+                        <p>
+                            * Afaste o mouse para ocultar resultado do código acima.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <hr>
+        <section id="td">
+            <h2>Tag - <span>&lt;td>&lt;/td></span></h2>
+            <p>A tag <span>&lt;td></span> define uma célula de dados padrão em uma tabela HTML.</p>
+            <p>Uma tabela HTML tem dois tipos de células: </p>
+            <ul>
+                <li>Células de cabeçalho - contém informações de cabeçalho (criadas com o elemento <span>&lt;td></span>)
+                </li>
+                <li>Células de dados - contém dados (criados com o elemento <span>&lt;td></span>)
+                </li>
+            </ul>
+            <p>O texto nos elementos<span>&lt;td></span> está em negrito e centralizado por padrão.</p>
+            O texto nos elementos span>&lt;td></span> são regulares e alinhados à esquerda por padrão.
+            <div class="exemplo">
+                <h3>Exemplo</h3>
+                <p>Uma tabela HTML simples, com duas linhas e quatro células de tabela:
+
+                </p>
+                <div class="xmp">
+                    <xmp>
+                        <table>
+                            <tr>
+                                <td>Cell A</td>
+                                <td>Cell B</td>
+                            </tr>
+                            <tr>
+                                <td>Cell C</td>
+                                <td>Cell D</td>
+                            </tr>
+                        </table>
+                    </xmp>
+                </div>
+                <div class="resultado">
+                    <div class="result-table">
+                        <table>
+                            <tr>
+                                <td>Cell A</td>
+                                <td>Cell B</td>
+                            </tr>
+                            <tr>
+                                <td>Cell C</td>
+                                <td>Cell D</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="result-p">
+                        <p>
+                            * Passe o mouse aqui para ver o resultado do código acima.
+                        </p>
+                    </div>
+                    <div class="result-oculto">
+                        <p>
+                            * Afaste o mouse para ocultar resultado do código acima.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <hr>
+        <section id="caption">
+            <h2>Tag - <span>&lt;caption>&lt;/caption></span></h2>
+            <p>A tag <span>&lt;caption></span> define uma legenda de tabela.</p>
+            <p>deve ser <span>caption</span> inserida imediatamente após a tag <span>&lt;table></span>.
+            </p>
+            <p><strong>Dica: </strong> Por padrão, uma legenda de tabela será alinhada ao centro acima de uma tabela. No
+                entanto, as
+                propriedades CSS <i>text-align</i> e <i>caption-side</i> podem ser usadas para alinhar e colocar a
+                legenda.</p>
+            <div class="exemplo">
+                <h3>Exemplo</h3>
+                <p>Uma tabela com uma legenda:</p>
+                <div class="xmp">
+                    <xmp>
+                        <table>
+                            <caption>Monthly savings</caption>
+                            <tr>
+                                <th>Month</th>
+                                <th>Savings</th>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td>$100</td>
+                            </tr>
+                        </table>
+                    </xmp>
+                </div>
+                <div class="resultado">
+                    <div class="result-table">
+                        <table>
+                            <caption>Monthly savings</caption>
+                            <tr>
+                                <th>Month</th>
+                                <th>Savings</th>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td>$100</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="result-p">
+                        <p>
+                            * Passe o mouse aqui para ver o resultado do código acima.
+                        </p>
+                    </div>
+                    <div class="result-oculto">
+                        <p>
+                            * Afaste o mouse para ocultar resultado do código acima.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <hr>
+        <section>
+            <h2>Tag - <span>&lt;td>&lt;/td></span></h2>
+            <p>A tag <span>&lt;td></span> define uma célula de dados padrão em uma tabela HTML.</p>
+            <p>Uma tabela HTML tem dois tipos de células: </p>
+            <ul>
+                <li>Células de cabeçalho - contém informações de cabeçalho (criadas com o elemento <span>&lt;td></span>)
+                </li>
+                <li>Células de dados - contém dados (criados com o elemento <span>&lt;td></span>)
+                </li>
+            </ul>
+            <p>O texto nos elementos<span>&lt;td></span> está em negrito e centralizado por padrão.</p>
+            O texto nos elementos span>&lt;td></span> são regulares e alinhados à esquerda por padrão.
+            <div class="exemplo">
+                <h3>Exemplo</h3>
+                <p>Uma tabela HTML simples, com duas linhas e quatro células de tabela:
+
+                </p>
+                <div class="xmp">
+                    <xmp>
+                        <table>
+                            <tr>
+                                <td>Cell A</td>
+                                <td>Cell B</td>
+                            </tr>
+                            <tr>
+                                <td>Cell C</td>
+                                <td>Cell D</td>
+                            </tr>
+                        </table>
+                    </xmp>
+                </div>
+                <div class="resultado">
+                    <div class="result-table">
+                        <table>
+                            <tr>
+                                <td>Cell A</td>
+                                <td>Cell B</td>
+                            </tr>
+                            <tr>
+                                <td>Cell C</td>
+                                <td>Cell D</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="result-p">
+                        <p>
+                            * Passe o mouse aqui para ver o resultado do código acima.
+                        </p>
+                    </div>
+                    <div class="result-oculto">
+                        <p>
+                            * Afaste o mouse para ocultar resultado do código acima.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <hr>
+        <section id="colgroup">
+            <h2>Tag - <span>&lt;colgroup>&lt;/colgroup></span></h2>
+            <p>A tag <span>&lt;colgroup></span> especifica um grupo de uma ou mais colunas em uma tabela para
+                formatação.</p>
+            <p>A tag <span>colgroup</span> é útil para aplicar estilos a colunas inteiras, em vez de repetir os estilos
+                para cada célula, para cada linha.
+            </p>
+            <p><strong>Observação: </strong> A tag <span>&lt;colgroup></span> deve ser filha de um elemento
+                <span>&lt;table></span>, depois de qualquer elemento <span>&lt;caption></span> e antes de qualquer
+                elemento <span>&lt;thead></span>, <span>&lt;tbody></span>, <span>&lt;tfoot></span> e
+                <span>&lt;tr></span>.
+            </p>
+            <p><strong>Dica: </strong> Para definir diferentes propriedades para uma coluna dentro de um
+                <span>&lt;colgroup></span>, use a tag <span>&lt;col></span> dentro da tag <span>&lt;colgroup></span>.
+            </p>
+            <div class="exemplo">
+                <h3>Exemplo</h3>
+                <p>Defina a cor de fundo das três colunas com as tags <span>&lt;colgroup></span> e
+                    <span>&lt;col></span>:
+
+                </p>
+                <div class="xmp">
+                    <xmp>
+                        <table>
+                            <colgroup>
+                                <col span="2" style="background-color:red">
+                                <col style="background-color:yellow">
+                            </colgroup>
+                            <tr>
+                                <th>ISBN</th>
+                                <th>Title</th>
+                                <th>Price</th>
+                            </tr>
+                            <tr>
+                                <td>3476896</td>
+                                <td>My first HTML</td>
+                                <td>$53</td>
+                            </tr>
+                        </table>
+                    </xmp>
+                </div>
+                <div class="resultado">
+                    <div class="result-table">
+                        <table>
+                            <colgroup>
+                                <col span="2" style="background-color:red">
+                                <col style="background-color:yellow">
+                            </colgroup>
+                            <tr>
+                                <th>ISBN</th>
+                                <th>Title</th>
+                                <th>Price</th>
+                            </tr>
+                            <tr>
+                                <td>3476896</td>
+                                <td>My first HTML</td>
+                                <td>$53</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="result-p">
+                        <p>
+                            * Passe o mouse aqui para ver o resultado do código acima.
+                        </p>
+                    </div>
+                    <div class="result-oculto">
+                        <p>
+                            * Afaste o mouse para ocultar resultado do código acima.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <hr>
+        <section id="col">
+            <h2>Tag - <span>&lt;col>&lt;/col></span></h2>
+            <p>A tag <span>&lt;col></span> especifica as propriedades da coluna para cada coluna dentro de um elemento
+                <colgroup> .
+            </p>
+            <p>A tag <span>&lt;col></span> é útil para aplicar estilos a colunas inteiras, em vez de repetir os estilos
+                para cada célula, para cada linha.</p>
+
+            <div class="exemplo">
+                <h3>Exemplo</h3>
+                <p>Defina a cor de fundo das três colunas com as tags <span>&lt;colgroup></span> e
+                    <span>&lt;col></span>:
+                </p>
+                <div class="xmp">
+                    <xmp>
+                        <table>
+                            <colgroup>
+                                <col span="2" style="background-color:red">
+                                <col style="background-color:yellow">
+                            </colgroup>
+                            <tr>
+                                <th>ISBN</th>
+                                <th>Title</th>
+                                <th>Price</th>
+                            </tr>
+                            <tr>
+                                <td>3476896</td>
+                                <td>My first HTML</td>
+                                <td>$53</td>
+                            </tr>
+                        </table>
+                    </xmp>
+                </div>
+                <div class="resultado">
+                    <div class="result-table">
+                        <table>
+                            <colgroup>
+                                <col span="2" style="background-color:red">
+                                <col style="background-color:yellow">
+                            </colgroup>
+                            <tr>
+                                <th>ISBN</th>
+                                <th>Title</th>
+                                <th>Price</th>
+                            </tr>
+                            <tr>
+                                <td>3476896</td>
+                                <td>My first HTML</td>
+                                <td>$53</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="result-p">
+                        <p>
+                            * Passe o mouse aqui para ver o resultado do código acima.
+                        </p>
+                    </div>
+                    <div class="result-oculto">
+                        <p>
+                            * Afaste o mouse para ocultar resultado do código acima.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <hr>
+        <section id="thead">
+            <h2>Tag - <span>&lt;thead>&lt;/thead></span></h2>
+            <p>A tag <span>&lt;thead></span> é usada para agrupar o conteúdo do cabeçalho em uma tabela HTML.</p>
+            <p>O elemento <span>&lt;thead></span> é usado em conjunto com os elementos <span>&lt;tbody></span> e
+                <span>&lt;tfoot></span> para especificar cada parte de uma tabela (cabeçalho, corpo, rodapé).
+            </p>
+            <p>Os navegadores podem usar esses elementos para permitir a rolagem do corpo da tabela independentemente do
+                cabeçalho e do rodapé. Além disso, ao imprimir uma tabela grande que abrange várias páginas, esses
+                elementos podem permitir que o cabeçalho e o rodapé da tabela sejam impressos na parte superior e
+                inferior de cada página.</p>
+            <p><b>Nota:</b> O eçemento <span>&lt;tfoot></span> deve ter uma ou mais tags <span>&lt;tr></span> dentro.
+            </p>
+            <p>A <span>&lt;thead></span>tag deve ser usada no seguinte contexto: como filho de um elemento
+                <span>&lt;table></span> , depois de qualquer elemento <span>&lt;caption></span> e
+                <span>&lt;colgroup></span> e antes de qualquer elemento <span>&lt;tbody></span> ,
+                <span>&lt;tfoot></span> e <span>&lt;tr></span> .
+
+            </p>
+            <p><b>Dica:</b> Os elementos <span>&lt;thead></span> , <span>&lt;tbody></span> e <span>&lt;tfoot></span> não
+                afetarão o layout da tabela por padrão. No entanto, você pode usar CSS para estilizar esses elementos
+            </p>
+            <div class="exemplo">
+                <h3>Exemplo 1</h3>
+                <p>Uma tabela HTML com um elemento <span>&lt;thead></span>, <span>&lt;tbody></span> e
+                    <span>&lt;tfoot></span>:
+                </p>
+                <div class="xmp">
+                    <xmp>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Month</th>
+                                    <th>Savings</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>January</td>
+                                    <td>$100</td>
+                                </tr>
+                                <tr>
+                                    <td>February</td>
+                                    <td>$80</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Sum</td>
+                                    <td>$180</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </xmp>
+                </div>
+                <div class="resultado">
+                    <div class="result-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Month</th>
+                                    <th>Savings</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>January</td>
+                                    <td>$100</td>
+                                </tr>
+                                <tr>
+                                    <td>February</td>
+                                    <td>$80</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Sum</td>
+                                    <td>$180</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class="result-p">
+                        <p>
+                            * Passe o mouse aqui para ver o resultado do código acima.
+                        </p>
+                    </div>
+                    <div class="result-oculto">
+                        <p>
+                            * Afaste o mouse para ocultar resultado do código acima.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exemplo">
+                <h3>Exemplo 2</h3>
+                <p>Estilize <span>&lt;thead></span>, <span>&lt;tbody></span> e <span>&lt;tfoot></span> com CSS:
+                </p>
+                <div class="xmp">
+                    <xmp>
+                        <html>
+
+                        <head>
+                            <style>
+                                thead {
+                                    color: green;
+                                }
+
+                                tbody {
+                                    color: blue;
+                                }
+
+                                tfoot {
+                                    color: red;
+                                }
+
+                                table,
+                                th,
+                                td {
+                                    border: 1px solid black;
+                                }
+                            </style>
+                        </head>
+
+                        <body>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Month</th>
+                                        <th>Savings</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>January</td>
+                                        <td>$100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>February</td>
+                                        <td>$80</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>Sum</td>
+                                        <td>$180</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </body>
+                    </xmp>
+                </div>
+                <div class="resultado">
+                    <div class="result-table">
+                        <table style="border: 1px solid black;">
+                            <thead style="color: green;">
+                                <tr>
+                                    <th style="border: 1px solid black;">Month</th>
+                                    <th style="border: 1px solid black;">Savings</th>
+                                </tr>
+                            </thead>
+                            <tbody style="color: blue;">
+                                <tr>
+                                    <td style="border: 1px solid black;">January</td>
+                                    <td style="border: 1px solid black;">$100</td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid black;">February</td>
+                                    <td style="border: 1px solid black;">$80</td>
+                                </tr>
+                            </tbody>
+                            <tfoot style="color: red;">
+                                <tr>
+                                    <td style="border: 1px solid black;">Sum</td>
+                                    <td style="border: 1px solid black;">$180</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class="result-p">
+                        <p>
+                            * Passe o mouse aqui para ver o resultado do código acima.
+                        </p>
+                    </div>
+                    <div class="result-oculto">
+                        <p>
+                            * Afaste o mouse para ocultar resultado do código acima.
+                        </p>
+                    </div>
+                </div>
+
+        </section>
+        <hr>
+        <section id="tbody">
+            <h2>Tag - <span>&lt;tbody>&lt;/tbody></span></h2>
+            <p>A tag <span>&lt;tbody></span> é usada para agrupar o conteúdo do corpo em uma tabela HTML.</p>
+            <p>O elemento <span>&lt;tbody></span> é usado em conjunto com os elementos <span>&lt;thead></span> e
+                <span>&lt;tfoot></span> para especificar cada parte de uma tabela (cabeçalho, corpo, rodapé).
+            </p>
+            <p>Os navegadores podem usar esses elementos para permitir a rolagem do corpo da tabela independentemente do
+                cabeçalho e do rodapé. Além disso, ao imprimir uma tabela grande que abrange várias páginas, esses
+                elementos podem permitir que o cabeçalho e o rodapé da tabela sejam impressos na parte superior e
+                inferior de cada página.</p>
+            <p><b>Nota:</b> O elemento <span>&lt;tbody></span> deve ter uma ou mais tags <span>&lt;tr></span> dentro.
+            </p>
+            <p>A <span>&lt;tbody></span>tag deve ser usada no seguinte contexto: como filho de um elemento
+                <span>&lt;table></span> , depois de qualquer elemento <span>&lt;caption></span> e
+                <span>&lt;colgroup></span> e <span>&lt;thead></span>.
+            </p>
+
+            <div class="exemplo">
+                <h3>Exemplo 1</h3>
+                <p>Uma tabela HTML com um elemento <span>&lt;tbody></span>, <span>&lt;thead></span> e
+                    <span>&lt;tfoot></span>:
+                </p>
+                <div class="xmp">
+                    <xmp>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Month</th>
+                                    <th>Savings</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>January</td>
+                                    <td>$100</td>
+                                </tr>
+                                <tr>
+                                    <td>February</td>
+                                    <td>$80</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Sum</td>
+                                    <td>$180</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </xmp>
+                </div>
+                <div class="resultado">
+                    <div class="result-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Month</th>
+                                    <th>Savings</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>January</td>
+                                    <td>$100</td>
+                                </tr>
+                                <tr>
+                                    <td>February</td>
+                                    <td>$80</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Sum</td>
+                                    <td>$180</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class="result-p">
+                        <p>
+                            * Passe o mouse aqui para ver o resultado do código acima.
+                        </p>
+                    </div>
+                    <div class="result-oculto">
+                        <p>
+                            * Afaste o mouse para ocultar resultado do código acima.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="tfoot">
+            <h2>Tag - <span>&lt;tfoot>&lt;/tfoot></span></h2>
+            <p>A tag <span>&lt;tfoot></span> é usada para agrupar o conteúdo do rodapé em uma tabela HTML.</p>
+            <p>O elemento <span>&lt;tfoot></span> é usado em conjunto com os elementos <span>&lt;thead></span> e
+                <span>&lt;tbody></span> para especificar cada parte de uma tabela (cabeçalho, corpo, rodapé).
+            </p>
+            <p>Os navegadores podem usar esses elementos para permitir a rolagem do corpo da tabela independentemente do
+                cabeçalho e do rodapé. Além disso, ao imprimir uma tabela grande que abrange várias páginas, esses
+                elementos podem permitir que o cabeçalho e o rodapé da tabela sejam impressos na parte superior e
+                inferior de cada página.</p>
+            <p><b>Nota:</b> O elemento <span>&lt;tfoot></span> deve ter uma ou mais tags <span>&lt;tr></span> dentro.
+            </p>
+            <p>A <span>&lt;tfoot></span>tag deve ser usada no seguinte contexto: como filho de um elemento
+                <span>&lt;table></span> , depois de qualquer elemento <span>&lt;caption></span> e
+                <span>&lt;colgroup></span>, <span>&lt;thead></span> e <span>&lt;tbody></span>.
+            </p>
+
+            <div class="exemplo">
+                <h3>Exemplo 1</h3>
+                <p>Uma tabela HTML com um elemento <span>&lt;tfoot></span>, <span>&lt;thead></span> e
+                    <span>&lt;tfoot></span>:
+                </p>
+                <div class="xmp">
+                    <xmp>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Month</th>
+                                    <th>Savings</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>January</td>
+                                    <td>$100</td>
+                                </tr>
+                                <tr>
+                                    <td>February</td>
+                                    <td>$80</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Sum</td>
+                                    <td>$180</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </xmp>
+                </div>
+                <div class="resultado">
+                    <div class="result-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Month</th>
+                                    <th>Savings</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>January</td>
+                                    <td>$100</td>
+                                </tr>
+                                <tr>
+                                    <td>February</td>
+                                    <td>$80</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Sum</td>
+                                    <td>$180</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class="result-p">
+                        <p>
+                            * Passe o mouse aqui para ver o resultado do código acima.
+                        </p>
+                    </div>
+                    <div class="result-oculto">
+                        <p>
+                            * Afaste o mouse para ocultar resultado do código acima.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <a href="#up" id="btn-up">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+        </svg>
+    </a>
+    <a href="#dg" id="btn-dg">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
+        </svg>
+    </a>
+    <div id="dg"></div>
+</body>
+
+</html>
