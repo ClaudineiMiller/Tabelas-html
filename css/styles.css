@@ -54,7 +54,13 @@ main {
     margin: 0 auto;
 }
 
+.decoration-none {
+    text-decoration: none;
+}
 
+.decoration-none:hover {
+    text-decoration: underline crimson;
+}
 
 span,
 .table tbody td a {
